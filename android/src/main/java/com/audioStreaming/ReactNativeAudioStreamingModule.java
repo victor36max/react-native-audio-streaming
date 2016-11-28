@@ -92,9 +92,9 @@ public class ReactNativeAudioStreamingModule extends ReactContextBaseJavaModule
   private void playInternal(String streamingURL) {
     signal.play(streamingURL);
 
-    if (shouldShowNotification) {
-      signal.showNotification();
-    }
+//    if (shouldShowNotification) {
+//      signal.showNotification();
+//    }
   }
 
   @ReactMethod public void stop() {
@@ -112,7 +112,7 @@ public class ReactNativeAudioStreamingModule extends ReactContextBaseJavaModule
   }
 
   @ReactMethod public void destroyNotification() {
-    signal.exitNotification();
+    //signal.exitNotification();
   }
 
   @ReactMethod public void getStatus(Callback callback) {
